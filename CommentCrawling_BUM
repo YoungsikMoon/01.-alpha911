@@ -63,7 +63,7 @@ creators = []
 
 wb_dic = {}
 
-wbdays = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY', 'TEN', 'COMPLETE']
+wbdays = ['MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY']
 
 # get 방식 정보추출_웹툰 id
 for wbday in wbdays:
