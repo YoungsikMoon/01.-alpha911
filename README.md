@@ -13,4 +13,5 @@ ex) CoomentCrawling_Main
 우리 프로젝트는 수평구조로 각각의 의견을 서로가 평가하여 수용하고 최선책을 투표를 하여 진행합니다.
 각 기능 구성을 모두 개개인의 스타일대로 만들어서 서로에게 보여주고 다양한 방식의 코드를 경험하고 좋은 코드가 무엇인지 고민하며 성장할 수 있습니다.
 다들 제출일까지 화이팅~
-<img src='https://github.com/Ijjoe/k-digital_alpaedu_pythonStudy/blob/main/img/1%EC%B0%A8%EA%B3%84%ED%9A%8D%ED%91%9C.PNG'/>
+
+<img src='https://github.com/Ijjoe/k-digital_alpaedu_pythonStudy/blob/main/img/1%EC%B0%A8%EA%B3%84%ED%9A%8D%ED%91%9C_2.PNG'/>
