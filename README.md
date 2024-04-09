@@ -15,5 +15,3 @@ ex) 00_CoomentCrawling_Main
 프로젝트 수행 절차는 파일 네이밍 맨 앞의 숫자를 기준으로 적용했습니다.
 
 다들 프로젝트 마무리까지 화이팅~
-
-<img src='https://github.com/Ijjoe/k-digital_alpaedu_pythonStudy/blob/main/img/1%EC%B0%A8%EA%B3%84%ED%9A%8D%ED%91%9C_2.PNG'/>
