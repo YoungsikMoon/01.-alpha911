@@ -15,4 +15,16 @@ ex) 00_CoomentCrawling_Main
 
 프로젝트 수행 절차는 파일 네이밍 맨 앞의 숫자를 기준으로 적용했습니다.
 
-다들 프로젝트 마무리까지 화이팅~
+*디렉토리 설명*
+datas : 각종 데이타셋 모음
+CommentCrawling : 툰 크롤링 코드 모음
+Preprocessing : 전처리 코드 모음
+MakingLDA: LDA 생성 코드 모음
+
+00_CommentCrawling_Main.ipynb : 크롤링 코드
+01_MakingAllReviewMVDrop_Main.ipynb : 결측치 제거 코드
+02_MakingAlllReviewCorpus_Main.ipynb : 댓글 코퍼스 생성 코드
+03_preprocessing_Main.py : 코퍼스 전처리 코드
+04_MakingWordCloud_Main.py : 워드클라우드 생성 코드
+05_MakingLDA_en_Main.ipynb : 영문 LDA 생성 코드(영어전처리+영어워드클라우드생성 포함)
+05_MakingLDA_ko_Main.ipynb : 한글 LDA 생성 코드
