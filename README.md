@@ -1,62 +1,27 @@
-우리 프로젝트는 수평구조로 각각의 의견을 서로가 평가하여 수용하고 최선책을 투표를 하여 진행합니다.
+# ALPHA911 · 한·영 웹툰 댓글 텍스트 분석
 
+한국어와 영어 웹툰 댓글을 수집하고, 전처리·워드클라우드·LDA 토픽 모델링으로 독자 반응을 탐색한 팀 프로젝트입니다. 같은 분석 단계에 여러 구현을 시도하고 결과를 비교하는 방식으로 진행했습니다.
 
+## 역할 구분
 
+파일 이름의 `_Moon`은 문영식, `_Kim`은 김예선, `_Jo`는 조인준, `_Choi`는 최희범의 작업을 나타냅니다. 문영식의 수집·한국어 전처리·토픽 모델링 실험과 팀 통합본을 함께 확인할 수 있습니다. `_Main` 파일은 팀의 통합 분석 흐름입니다.
 
-각 기능 구성을 모두 개개인의 스타일대로 만들어서 서로에게 보여주고 다양한 방식의 코드를 경험하고 좋은 코드가 무엇인지 고민하며 성장할 수 있습니다.
+## 분석 흐름
 
+| 단계 | 통합 코드 |
+| --- | --- |
+| 댓글 수집 | [00_CommentCrawling_Main.ipynb](00_CommentCrawling_Main.ipynb) |
+| 리뷰 정리·결측 처리 | [01_MakingAllReviewMVDrop_Main.ipynb](01_MakingAllReviewMVDrop_Main.ipynb) |
+| 코퍼스 구성 | [02_MakingAlllReviewCorpus_Main.ipynb](02_MakingAlllReviewCorpus_Main.ipynb) |
+| 전처리 | [03_preprocessing_Main.py](03_preprocessing_Main.py) |
+| 워드클라우드 | [04_MakingWordCloud_Main.py](04_MakingWordCloud_Main.py) |
+| 토픽 모델링 | [영어 LDA](05_MakingLDA_en_Main.ipynb), [한국어 LDA](05_MakingLDA_ko_Main.ipynb) |
+| 전체 흐름 | [06_All_Main.ipynb](06_All_Main.ipynb) |
 
+한국어 분석에서는 형태소 분석기와 전처리 방식에 따라 분석 입력이 달라지는 점을 비교했습니다. 결과는 댓글 집합의 주제와 단어 분포를 이해하기 위한 탐색 자료이며, 전체 독자의 의견이나 특정 현상의 원인을 입증하는 지표는 아닙니다.
 
+## 실행과 자료
 
-기능별 작성된 개인의 코드 파일 이름은 동일하게 하며 마지막에 자신을 상징하는 성 을 붙입니다.
+노트북별 로컬 데이터 경로를 수정하고 사용한 형태소 분석기·사전을 준비해야 합니다. 일부 한국어 도구에는 Java 또는 별도 설치 과정이 필요합니다. 통합된 의존성 잠금 파일은 없으므로 수집부터 일괄 실행하기보다 저장된 데이터와 각 단계의 입력·출력을 먼저 확인하는 편이 좋습니다.
 
-ex) CommentCrawling_Moon 문영식
-
-ex) CommentCrawling_Kim 김예선
-
-ex) CommentCrawling_Jo 조인준
-
-ex) CommentCrawling_Choi 최희범
-
-
-
- 
-작성된 코드는 미리 세분화 된 디렉토리에 업로드 합니다.
-
-업로드 된 코드들의 가독성과 성능을 토론하여 최적의 코드를 선정하여 _Main으로 합니다.
-
-ex) 00_CoomentCrawling_Main
-
-ㄴ 메인 코드는 최종 업로드 전 더욱 간결하게 가공 후 업로드 합니다.
-
-프로젝트 수행 절차는 파일 네이밍 맨 앞의 숫자를 기준으로 적용했습니다.
-
-
-
-
-datas : 각종 데이타셋 모음
-
-CommentCrawling : 툰 크롤링 코드 모음
-
-Preprocessing : 전처리 코드 모음
-
-MakingLDA: LDA 생성 코드 모음
-
-
-
-
-
-
-00_CommentCrawling_Main.ipynb : 크롤링 코드
-
-01_MakingAllReviewMVDrop_Main.ipynb : 결측치 제거 코드
-
-02_MakingAlllReviewCorpus_Main.ipynb : 댓글 코퍼스 생성 코드
-
-03_preprocessing_Main.py : 코퍼스 전처리 코드
-
-04_MakingWordCloud_Main.py : 워드클라우드 생성 코드
-
-05_MakingLDA_en_Main.ipynb : 영문 LDA 생성 코드(영어전처리+영어워드클라우드생성 포함)
-
-05_MakingLDA_ko_Main.ipynb : 한글 LDA 생성 코드
+발표 자료와 분석용 데이터는 [datas](datas)에 있습니다. 외부 사이트 데이터와 라이브러리에는 각각의 이용 조건이 적용됩니다.
